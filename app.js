@@ -21,6 +21,6 @@ app.use('/students',studentRouter);
 const collegeRouter=require('./routes/colleges');
 app.use('/colleges',collegeRouter);
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('server started');
 })
